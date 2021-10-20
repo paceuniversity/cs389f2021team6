@@ -9,9 +9,11 @@
 
 **[Idea Proposal](https://docs.google.com/document/d/1Y4O65naMj0IUarM-2nUE2AWCd68yfMldwEiK7t3byJo/edit?usp=sharing)**
 
-**Calendar**
+**[Calendar](https://calendar.google.com/calendar/u/0/r?cid=aXZoMmU3NjhzMjRkdGlxZWYwcXZvbzhxcjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)**
 
 **[Product Backlog](https://docs.google.com/spreadsheets/d/1QwzCyM6pVbFFeJqngEYKHyMZibZs8vGi2wqHhM_M9ok/edit#gid=0)**
+
+**[requirement discovery](https://docs.google.com/document/d/1xq9sqLOsAgHmiw3HjIU4jMCqYH8xzpmiCY6y_SwiUXA/edit)**
 
 **Architecture & Design**
 
