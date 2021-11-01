@@ -21,7 +21,7 @@
 
 **Sprint 1**
 
-* [Sprint planning](https://docs.google.com/spreadsheets/d/1QwzCyM6pVbFFeJqngEYKHyMZibZs8vGi2wqHhM_M9ok/edit#gid=1232638099)**
+* [Sprint planning](https://docs.google.com/spreadsheets/d/1QwzCyM6pVbFFeJqngEYKHyMZibZs8vGi2wqHhM_M9ok/edit#gid=1232638099)
 * Scrums
 * Sprint demo - video and apk (or equivalent)
 * Spring retrospective
