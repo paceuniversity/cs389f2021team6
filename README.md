@@ -1,4 +1,5 @@
-# cs389f2021team6
+<h1 align="center">CS389 Fall2021 </h1>
+<H1 ALIGN="center">Team06</h1>
 
 <h2> App name: OneHome </h2>
 
