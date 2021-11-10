@@ -37,7 +37,7 @@
 * [Scrums](https://docs.google.com/document/d/1EVroJw5ZFZusgewzSE5HTraL3jY6q_f4F69v_jz60KE/edit?usp=sharing)
 * [Sprint demo](https://docs.google.com/document/d/1FYh3vLTmnD5vhiErMVRDBpV3dmm4XOb3gjzF5mcwDFk/edit)
 * sprint vedio
-* Spring retrospective
+* [Spring retrospective](https://docs.google.com/document/d/1JklMLvCq0Cw9R0GRYbENvADkayc0nclyxshKB1zMMQs/edit)
 
 **Sprint 2**
 
