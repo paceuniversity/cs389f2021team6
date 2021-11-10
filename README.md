@@ -35,7 +35,8 @@
 
 * [Sprint planning](https://docs.google.com/spreadsheets/d/1QwzCyM6pVbFFeJqngEYKHyMZibZs8vGi2wqHhM_M9ok/edit?usp=sharing)
 * [Scrums](https://docs.google.com/document/d/1EVroJw5ZFZusgewzSE5HTraL3jY6q_f4F69v_jz60KE/edit?usp=sharing)
-* Sprint demo - video and apk (or equivalent)
+* [Sprint demo](https://docs.google.com/document/d/1FYh3vLTmnD5vhiErMVRDBpV3dmm4XOb3gjzF5mcwDFk/edit)
+* sprint vedio
 * Spring retrospective
 
 **Sprint 2**
