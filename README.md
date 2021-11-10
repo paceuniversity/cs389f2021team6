@@ -27,7 +27,7 @@
 
 <h2>Architecture & Design</h2>
 
-**[Architecture & Design](https://docs.google.com/document/d/13mpeupEuSvwAyEvjBtUXm3FBu1TlClKN0CvOAwrSchc/edit)**
+**[Architecture & Design](https://docs.google.com/document/d/13mpeupEuSvwAyEvjBtUXm3FBu1TlClKN0CvOAwrSchc/edit?usp=sharing)**
 
 <h2>Content</h2>
 
