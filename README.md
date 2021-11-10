@@ -23,7 +23,7 @@
 
 **[Product Backlog](https://docs.google.com/spreadsheets/d/1QwzCyM6pVbFFeJqngEYKHyMZibZs8vGi2wqHhM_M9ok/edit#gid=0)**
 
-**[requirement discovery](https://docs.google.com/document/d/1xq9sqLOsAgHmiw3HjIU4jMCqYH8xzpmiCY6y_SwiUXA/edit)**
+**[requirement discovery](https://docs.google.com/document/d/1xq9sqLOsAgHmiw3HjIU4jMCqYH8xzpmiCY6y_SwiUXA/edit?usp=sharing)**
 
 <h2>Architecture & Design</h2>
 
