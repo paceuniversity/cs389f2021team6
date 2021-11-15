@@ -47,7 +47,8 @@
 * [sprint task](https://docs.google.com/document/d/1N2cpCA2WzZLNRZhN5HbQzo4L0giow0T47ILwe9hi3aY/edit?usp=sharing)
 * [Scrums](https://docs.google.com/document/d/1EVroJw5ZFZusgewzSE5HTraL3jY6q_f4F69v_jz60KE/edit?usp=sharing)
 * Sprint demo - video and apk (or equivalent)
-* Spring retrospective
+* [Spring retrospective](https://docs.google.com/document/d/1JklMLvCq0Cw9R0GRYbENvADkayc0nclyxshKB1zMMQs/edit?usp=sharing)
+
 
 **Sprint 3** 
 
