@@ -4,6 +4,7 @@
 <h2> App name: OneHome </h2>
 
 **App description**
+*We are an app for sharing idle items on campus with others. Here you can share the items you don't need, and you can also get what you want. We make every item show more value.
 
 <h2> Team </h2>
 
