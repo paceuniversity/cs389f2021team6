@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "327543085883",
+    "project_id": "onehome-c148b",
+    "storage_bucket": "onehome-c148b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327543085883:android:d50aeb3aabba27a643f51e",
+        "android_client_info": {
+          "package_name": "com.example.onehomereset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327543085883-n9omcs6oot8hduo813bjg9hiisro43tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPEw2KLKHTc0B2J8dV5PbuHGjT7py-5WI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327543085883-n9omcs6oot8hduo813bjg9hiisro43tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
