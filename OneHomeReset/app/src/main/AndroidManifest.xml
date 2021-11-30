@@ -10,11 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneHomeReset">
         <activity
-            android:name=".navdrawer"
-            android:exported="false"
-            android:label="@string/title_activity_navdrawer"
-            android:theme="@style/Theme.OneHomeReset.NoActionBar" />
-
+            android:name=".nav_drawer"
+            android:exported="false" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />

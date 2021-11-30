@@ -1,25 +1,16 @@
-package com.example.onehomereset.ui.slideshow;
+package com.example.onehomereset;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.example.onehomereset.MainActivity;
-import com.example.onehomereset.R;
-import com.example.onehomereset.User;
-import com.example.onehomereset.databinding.FragmentSlideshowBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -28,32 +19,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class SlideshowFragment extends Fragment {
-
-    private FragmentSlideshowBinding binding;
+public class ProfileFragment extends Fragment {
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
     Activity context;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-       context = getActivity();
-
-
-        return root;
-    }
-
+    @Nullable
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public View onCreateView(LayoutInflater inflater , @Nullable ViewGroup container , @Nullable Bundle savedInstanceState) {
+        context = getActivity();
+        return inflater.inflate(R.layout.fragment_profile ,container,false);
     }
-
     public void onStart() {
         super.onStart();
         user = FirebaseAuth.getInstance().getCurrentUser();
