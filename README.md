@@ -38,7 +38,7 @@ We are an app for sharing idle items on campus with others. Here you can share t
 * [Sprint planning](https://docs.google.com/spreadsheets/d/1QwzCyM6pVbFFeJqngEYKHyMZibZs8vGi2wqHhM_M9ok/edit?usp=sharing)
 * [Scrums](https://docs.google.com/document/d/1EVroJw5ZFZusgewzSE5HTraL3jY6q_f4F69v_jz60KE/edit?usp=sharing)
 * [Sprint demo](https://docs.google.com/document/d/1FYh3vLTmnD5vhiErMVRDBpV3dmm4XOb3gjzF5mcwDFk/edit?usp=sharing)
-* [APK](https://drive.google.com/file/d/1DFNojkOsg3RXoJBVQLieTWJU2I6-swN4/view?usp=sharing)
+* [APK](https://drive.google.com/file/d/1OQz6lNXLoLTG1coyijDEz3RYgWVZHy_I/view?usp=sharing)
 * [sprint demo video1](https://youtu.be/wc7o-mlXvbk)
 * [sprint demo video2](https://youtu.be/Tn8SiMBdanc)
 * [Spring retrospective](https://docs.google.com/document/d/1JklMLvCq0Cw9R0GRYbENvADkayc0nclyxshKB1zMMQs/edit?usp=sharing)
@@ -51,7 +51,7 @@ We are an app for sharing idle items on campus with others. Here you can share t
 * [sprint demo video](https://youtu.be/aJjOACN8XYI)
 * [Sprint demo - video and apk (or equivalent)](https://docs.google.com/document/d/1GZtTZhymDtEb8djYVF7CSn1jc7c5fw60CiTPvDxQ6Qc/edit?usp=sharing)
 * [Spring retrospective](https://docs.google.com/document/d/1zgzOYCqYdwTMDFHpX4MaEr6VfkRkxitKAFwCuKyGb7w/edit?usp=sharing)
-* [APK](https://drive.google.com/drive/u/0/my-drive)
+* [APK](https://drive.google.com/file/d/1OQz6lNXLoLTG1coyijDEz3RYgWVZHy_I/view?usp=sharing)
 
 
 **Sprint 3** 
