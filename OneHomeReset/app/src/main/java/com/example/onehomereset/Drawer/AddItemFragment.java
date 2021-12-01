@@ -1,4 +1,4 @@
-package com.example.onehomereset;
+package com.example.onehomereset.Drawer;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -22,6 +22,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.onehomereset.R;
+import com.example.onehomereset.Upload;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;

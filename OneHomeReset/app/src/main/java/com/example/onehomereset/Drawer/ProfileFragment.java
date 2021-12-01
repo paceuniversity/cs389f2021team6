@@ -1,4 +1,4 @@
-package com.example.onehomereset;
+package com.example.onehomereset.Drawer;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.onehomereset.R;
+import com.example.onehomereset.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
