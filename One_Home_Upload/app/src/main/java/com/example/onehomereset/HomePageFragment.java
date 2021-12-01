@@ -1,0 +1,50 @@
+package com.example.onehomereset;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+
+import android.view.LayoutInflater;
+import android.view.View;
+
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+import com.example.onehomereset.ProductViewHolder;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
+
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toolbar;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.onehomereset.R;
+import com.google.android.material.navigation.NavigationView;
+
+public class HomePageFragment extends Fragment{
+    Activity context;
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater , @Nullable ViewGroup container , @Nullable Bundle savedInstanceState) {
+        context = getActivity();
+        return inflater.inflate(R.layout.fragment_homepage ,container,false);
+    }
+}
