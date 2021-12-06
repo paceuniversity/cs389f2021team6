@@ -51,7 +51,7 @@ We are an app for sharing idle items on campus with others. Here you can share t
 * [sprint demo video](https://youtu.be/aJjOACN8XYI)
 * [Sprint demo - video and apk (or equivalent)](https://docs.google.com/document/d/1GZtTZhymDtEb8djYVF7CSn1jc7c5fw60CiTPvDxQ6Qc/edit?usp=sharing)
 * [Spring retrospective](https://docs.google.com/document/d/1zgzOYCqYdwTMDFHpX4MaEr6VfkRkxitKAFwCuKyGb7w/edit?usp=sharing)
-* [APK](https://drive.google.com/file/d/1OQz6lNXLoLTG1coyijDEz3RYgWVZHy_I/view?usp=sharing)
+* [APK](https://drive.google.com/file/d/105-Ozd8Ho-GGpOP3qWbN2BCU9yIQ_GV9/view?usp=sharing)
 
 
 **Sprint 3** 
