@@ -15,6 +15,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.onehomereset.Drawer.AddItemFragment;
+import com.example.onehomereset.Drawer.HelpUsImproveFragment;
+import com.example.onehomereset.Drawer.ProfileFragment;
 import com.example.onehomereset.HomePageFragment;
 import com.example.onehomereset.MainActivity;
 import com.example.onehomereset.R;
