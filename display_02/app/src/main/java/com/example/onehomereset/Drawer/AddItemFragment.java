@@ -176,161 +176,45 @@ public class AddItemFragment extends Fragment {
             }
         }
 
-        private void StoreProductImfInformation() {
-            mLoadingBar.setTitle("Add New Product");
-            mLoadingBar.setMessage("Dear Admin, please wait while we are adding the new product.");
-            mLoadingBar.setCanceledOnTouchOutside(false);
-            mLoadingBar.show();
-
-            Calendar calendar = Calendar.getInstance();
-
-            SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
-            saveCurrentDate = currentDate.format(calendar.getTime());
-
-            SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
-            saveCurrentTime = currentTime.format(calendar.getTime());
-
-            productRandomKey = saveCurrentDate + saveCurrentTime;
-
-            final StorageReference profileImageRef = FirebaseStorage.getInstance().getReference("profilepics/" + System.currentTimeMillis() + ".jpg");
-            final StorageReference filePath = mStorageRef.child(mImageUri.getLastPathSegment() + productRandomKey + ".jpg");
-
-            final UploadTask uploadTask = filePath.putFile(mImageUri);
-
-
-            uploadTask.addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e)
-                {
-                    String message = e.toString();
-                    Toast.makeText(getActivity(), "Error: " + message, Toast.LENGTH_SHORT).show();
-                    mLoadingBar.dismiss();
-                }
-            }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot)
-                {
-                    Toast.makeText(getActivity(), "Product Image uploaded Successfully...", Toast.LENGTH_SHORT).show();
-
-                    Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
-                        @Override
-                        public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
-                            if (!task.isSuccessful()) {
-                                throw task.getException();
-                            }
-
-                            downloadImageUrl = filePath.getDownloadUrl().toString();
-                            return filePath.getDownloadUrl();
-                        }
-                    }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Uri> task)
-                        {
-                            if (task.isSuccessful()) {
-                                downloadImageUrl = task.getResult().toString();
-
-                                Toast.makeText(getActivity(), "got the Product image Url Successfully...", Toast.LENGTH_SHORT).show();
-
-                                uploadFile();
-                            }
-                        }
-                    });
-                }
-            });
-        }
-        private void SaveProductInfoToDatabase() {
-        HashMap<String, Object> productMap = new HashMap<>();
-        productMap.put("pid", productRandomKey);
-        productMap.put("date", saveCurrentDate);
-        productMap.put("time", saveCurrentTime);
-        productMap.put("description", Description);
-        productMap.put("image", downloadImageUrl);
-        //productMap.put("category", CategoryName);
-        productMap.put("phone",mEditTextPhoneNum);
-        productMap.put("productName",ProductName);
-
-        mDatabaseRef.child(productRandomKey).updateChildren(productMap)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task)
-                    {
-                        if (task.isSuccessful())
-                        {
-                            Intent intent = new Intent(getActivity(), ImageActivity.class);
-                            startActivity(intent);
-
-                            mLoadingBar.dismiss();
-                            Toast.makeText(getActivity(), "Product is added successfully..", Toast.LENGTH_SHORT).show();
-                        }
-                        else
-                        {
-                            mLoadingBar.dismiss();
-                            String message = task.getException().toString();
-                            Toast.makeText(getActivity(), "Error: " + message, Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }
-
         private void uploadFile() {
             if (mImageUri != null) {
                 StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
                         + "." + getFileExtension(mImageUri));
 
-                mUploadTask = fileReference.putFile(mImageUri)
-                        //when successful
-                        .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                fileReference.putFile(mImageUri).continueWithTask(
+                        new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                             @Override
-                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        mProgressBar.setProgress(0);
-                                    }
-                                } , 500);
-
-                                //this is the new way to do it
-                                mStorageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                    @Override
-                                    public void onSuccess(Uri uri) {
-                                        Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),
-                                                uri.toString(),
-                                                mEditTextPhoneNum.getText().toString().trim(),
-                                                mEditDescription.getText().toString().trim());
-                                        String uploadId = mDatabaseRef.push().getKey();
-                                        mDatabaseRef.child(uploadId).setValue(upload);
-                                        mEditTextFileName.setText("");
-                                        mLoadingBar.dismiss();
-
-                                    }
-                                });
-                                Toast.makeText(getActivity() , "Upload Successfully" , Toast.LENGTH_LONG).show();
-
+                            public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                                if (!task.isSuccessful()) {
+                                    throw task.getException(); }
+                                return fileReference.getDownloadUrl();
+                            } })
+                        .addOnCompleteListener(new OnCompleteListener<Uri>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Uri> task) {
+                                if (task.isSuccessful()) { Uri downloadUri = task.getResult();
+                                    Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),
+                                            mEditTextPhoneNum.getText().toString().trim(),
+                                            mEditDescription.getText().toString().trim(),
+                                            downloadUri.toString());
+                                    mDatabaseRef.push().setValue(upload);
+                                    Toast.makeText(getActivity(), "Upload successful", Toast.LENGTH_LONG).show();
+                                }
+                                else { Toast.makeText(getActivity(), "upload failed: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                }
                             }
                         })
-                        //when failure
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                mLoadingBar.dismiss();
-                                Toast.makeText(getActivity() , e.getMessage() , Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        //when in progress
-                        .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-                            @Override
-                            public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
-                                double progress = (100.0 * taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
-                                mProgressBar.setProgress((int) progress);
-                                mLoadingBar.dismiss();
+                                Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
                             }
                         });
-
+            } else {
+                Toast.makeText(getActivity(), "No file selected", Toast.LENGTH_LONG).show();
             }
-
         }
+
 
     }
 

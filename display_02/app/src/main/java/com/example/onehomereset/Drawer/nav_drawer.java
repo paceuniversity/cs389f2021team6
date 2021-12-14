@@ -8,16 +8,16 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.media.browse.MediaBrowser;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.onehomereset.Drawer.AddItemFragment;
-import com.example.onehomereset.Drawer.HelpUsImproveFragment;
-import com.example.onehomereset.Drawer.ProfileFragment;
 import com.example.onehomereset.HomePageFragment;
 import com.example.onehomereset.MainActivity;
 import com.example.onehomereset.R;
@@ -25,10 +25,14 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.io.File;
+
 public class nav_drawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
+    Menu menu;
+    MenuItem item;
 
 
 
@@ -89,6 +93,13 @@ public class nav_drawer extends AppCompatActivity implements NavigationView.OnNa
                         new HelpUsImproveFragment()).commit();
                 break;
             case R.id.nav_share:
+                Intent myIntent = new Intent(Intent.ACTION_SEND);
+                myIntent.setType("text/plain");
+                String shareBody = "This is a free share App \n" + "https://drive.google.com/file/d/1OQz6lNXLoLTG1coyijDEz3RYgWVZHy_I/view";
+                String shareSub = "Get what you want for free! " ;
+                myIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
+                myIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+                startActivity(Intent.createChooser(myIntent, "Share using"));
                 Toast.makeText(this,"share",Toast.LENGTH_LONG).show();
                 break;
             case R.id.nav_logout:
@@ -103,4 +114,3 @@ public class nav_drawer extends AppCompatActivity implements NavigationView.OnNa
 
 
 }
-
