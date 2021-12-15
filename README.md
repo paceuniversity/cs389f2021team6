@@ -4,7 +4,8 @@
 <h2> App name: OneHome </h2>
 
 **App description**
-(https://github.com/paceuniversity/cs389f2021team6/blob/main/01%20copy.png?raw=true)(https://github.com/paceuniversity/cs389f2021team6/blob/main/02%20copy.png?raw=true)
+![This is an image](https://github.com/paceuniversity/cs389f2021team6/blob/main/01%20copy.png?raw=true)
+![This is an image](https://github.com/paceuniversity/cs389f2021team6/blob/main/02%20copy.png?raw=true)
 
 We are an app for sharing idle items on campus with others. Here you can share the items you don't need, and you can also get what you want. We make every item show more value.
 
