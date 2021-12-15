@@ -59,7 +59,7 @@ We are an app for sharing idle items on campus with others. Here you can share t
 * [Sprint planning](https://docs.google.com/spreadsheets/d/1QwzCyM6pVbFFeJqngEYKHyMZibZs8vGi2wqHhM_M9ok/edit#gid=158836135)
 * [Scrums](https://docs.google.com/document/d/1EVroJw5ZFZusgewzSE5HTraL3jY6q_f4F69v_jz60KE/edit?usp=sharing)
 * Sprint demo - video and apk (or equivalent)
-* [Spring retrospective](https://docs.google.com/document/d/1JklMLvCq0Cw9R0GRYbENvADkayc0nclyxshKB1zMMQs/edit?usp=sharing)
+* [Spring retrospective](https://docs.google.com/document/d/1Va9f8FTi1h7W70d9NzwaS8L485X6hYtn583jBT6vJak/edit?usp=sharing)
 
 **Final presentation**
 
