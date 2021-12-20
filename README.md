@@ -2,7 +2,8 @@
 <H1 ALIGN="center">Team06</h1>
 
 <h2> App name: OneHome </h2>
- ![This is an image](https://github.com/paceuniversity/cs389f2021team6/blob/main/Yellow%20and%20Orange%20Rectangles%20Modern%20Swiss%20Business%20Retractable%20Exhibition%20Banner.png)
+
+![Screenshot](Yellow and Orange Rectangles Modern Swiss Business Retractable Exhibition Banner.png)
 
 **App description**
 | logo01 | logo02 |
