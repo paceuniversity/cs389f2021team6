@@ -69,8 +69,9 @@ We are an app for sharing idle items on campus with others. Here you can share t
 
 **[Final presentation](https://docs.google.com/presentation/d/1M35Qz5QZIpYJYhhS5v-W977Tv82aLEBe7_vnYSfLYmE/edit?usp=sharing)**
 
-**Poster**
+<h2>Poster</h2>
 
+![This is an image](https://github.com/paceuniversity/cs389f2021team6/blob/main/White%20Pink%20Blue%20and%20Yellow%20Organic%20Shape%20Diversity%20Workshop%20Webinar%20Keynote%20Presentation.png?raw=true)
 
 **Process description**
 
@@ -78,5 +79,5 @@ We are an app for sharing idle items on campus with others. Here you can share t
 
 **Tools**
 
- [![](https://i.imgur.com/sUs2pG4.png)](https://github.com/) [![](https://i.imgur.com/DMpHchR.png)](https://developer.android.com/studio) [![](https://i.imgur.com/1jS4ZyR.png)](https://www.google.com/drive/) [![](https://i.imgur.com/UFflCJs.png)](https://www.adobe.com/products/photoshop.html)[![](https://i.imgur.com/HVKVyVW.png)](https://firebase.google.com/)
+ [![](https://i.imgur.com/sUs2pG4.png)](https://github.com/) [![](https://i.imgur.com/DMpHchR.png)](https://developer.android.com/studio) [![](https://i.imgur.com/1jS4ZyR.png)](https://www.google.com/drive/) [![](https://i.imgur.com/UFflCJs.png)](https://www.adobe.com/products/photoshop.html)[![](https://i.imgur.com/HVKVyVW.png)](https://firebase.google.com/) [![](https://imgur.com/uie4LYy.png)](https://www.canva.com/)
 
