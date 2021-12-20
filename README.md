@@ -3,7 +3,7 @@
 
 <h2> App name: OneHome </h2>
 
-![Screenshot](Yellow and Orange Rectangles Modern Swiss Business Retractable Exhibition Banner.png)
+![This is an image](https://github.com/paceuniversity/cs389f2021team6/blob/main/Yellow%20and%20Orange%20Rectangles%20Modern%20Swiss%20Business%20Retractable%20Exhibition%20Banner.png?raw=true)
 
 **App description**
 | logo01 | logo02 |
