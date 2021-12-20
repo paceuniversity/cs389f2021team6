@@ -65,10 +65,10 @@ We are an app for sharing idle items on campus with others. Here you can share t
 * [Sprint demo - video and apk (or equivalent)](https://docs.google.com/document/d/1OL98dQGt4CSz-XmTRQqYxVecB1PGR_El4IyDNiVMPuI/edit?usp=sharing)
 * [Spring retrospective](https://docs.google.com/document/d/1Va9f8FTi1h7W70d9NzwaS8L485X6hYtn583jBT6vJak/edit?usp=sharing)
 
-**Final presentation**
-*[Final pre ppt](https://docs.google.com/presentation/d/1M35Qz5QZIpYJYhhS5v-W977Tv82aLEBe7_vnYSfLYmE/edit?usp=sharing)
+**[Final presentation] (https://docs.google.com/presentation/d/1M35Qz5QZIpYJYhhS5v-W977Tv82aLEBe7_vnYSfLYmE/edit?usp=sharing)**
 
 **Poster**
+
 
 **Process description**
 
