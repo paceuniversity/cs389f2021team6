@@ -14,10 +14,10 @@ We are an app for sharing idle items on campus with others. Here you can share t
 
 <h2> Team </h2>
 
-| Name | Role | Contact info | 
-| :----------- | :------------ | :------------ |
-| [ linlan Cai](https://github.com/lialazyoaf)   | Content Manager | lc03159p@pace.edu |
-| [  Boyi Zhang ](https://github.com/zhangboyi115)| Product Owner | bz21819p@pace.edu |
+| Name | Role | Contact info |  Photo |
+| :----------- | :------------ | :------------ | :------------ |
+| [ linlan Cai](https://github.com/lialazyoaf)   | Content Manager | lc03159p@pace.edu |![This is an image](https://imgur.com/7Cz2vuL.png)|
+| [  Boyi Zhang ](https://github.com/zhangboyi115)| Product Owner | bz21819p@pace.edu |![This is an image](https://imgur.com/leWc3mR.png)|
 
 
 
